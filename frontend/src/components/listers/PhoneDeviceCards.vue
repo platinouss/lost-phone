@@ -101,7 +101,6 @@
             me.values = temp.data._embedded.devices;
             
             me.newValue = {
-                'deviceId': 0,
                 'userId': 0,
                 'deviceType': '',
                 'deviceModel': '',

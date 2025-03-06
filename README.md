@@ -36,7 +36,7 @@ mvn spring-boot:run
 - phone
 ```
  http :8088/lostReportHistories id="id"deviceId="deviceId"userId="userId"status="status"reportedAt="reportedAt"clearedAt="clearedAt"contents="contents"
- http :8088/devices id="id"deviceId="deviceId"userId="userId"deviceType="deviceType"deviceModel="deviceModel"deviceStatus="deviceStatus"
+ http :8088/devices id="id"userId="userId"deviceType="deviceType"deviceModel="deviceModel"deviceStatus="deviceStatus"
 ```
 - customer
 ```

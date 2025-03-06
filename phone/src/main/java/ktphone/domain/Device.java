@@ -20,8 +20,6 @@ public class Device {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private Long deviceId;
-
     private Long userId;
 
     private String deviceType;

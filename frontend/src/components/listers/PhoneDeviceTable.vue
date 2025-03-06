@@ -61,7 +61,6 @@
             headers: 
                 [
                     { text: "id", value: "id" },
-                    { text: "deviceId", value: "deviceId" },
                     { text: "userId", value: "userId" },
                     { text: "deviceType", value: "deviceType" },
                     { text: "deviceModel", value: "deviceModel" },
@@ -83,7 +82,6 @@
             this.values = temp.data._embedded.devices;
 
             this.newValue = {
-                'deviceId': 0,
                 'userId': 0,
                 'deviceType': '',
                 'deviceModel': '',

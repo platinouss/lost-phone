@@ -45,12 +45,10 @@
                             
                             
                             
-                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
                             [ Id :  {{data.id }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ DeviceId :  {{data.deviceId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ UserId :  {{data.userId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ DeviceType :  {{data.deviceType }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ DeviceModel :  {{data.deviceModel }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -114,7 +112,6 @@
             this.values = temp.data._embedded.devices;
             
             this.newValue = {
-                'deviceId': 0,
                 'userId': 0,
                 'deviceType': '',
                 'deviceModel': '',

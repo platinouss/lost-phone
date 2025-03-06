@@ -16,7 +16,6 @@
         </v-card-title >        
 
         <v-card-text style="background-color: white;">
-            <Number label="DeviceId" v-model="value.deviceId" :editMode="editMode" :inputUI="''"/>
             <Number label="UserId" v-model="value.userId" :editMode="editMode" :inputUI="''"/>
             <String label="DeviceType" v-model="value.deviceType" :editMode="editMode" :inputUI="''"/>
             <String label="DeviceModel" v-model="value.deviceModel" :editMode="editMode" :inputUI="''"/>
