@@ -28,6 +28,8 @@ public class Device {
 
     private String deviceStatus;
 
+    private Long usimId;
+
     @PostPersist
     public void onPostPersist() {
         PhoneRegistered phoneRegistered = new PhoneRegistered(this);

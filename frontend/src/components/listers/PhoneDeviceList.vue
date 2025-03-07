@@ -45,6 +45,7 @@
                             
                             
                             
+                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
@@ -53,6 +54,7 @@
                             [ DeviceType :  {{data.deviceType }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ DeviceModel :  {{data.deviceModel }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ DeviceStatus :  {{data.deviceStatus }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ UsimId :  {{data.usimId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -116,6 +118,7 @@
                 'deviceType': '',
                 'deviceModel': '',
                 'deviceStatus': '',
+                'usimId': 0,
             }
         },
         methods: {

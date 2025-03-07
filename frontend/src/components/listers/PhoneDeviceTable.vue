@@ -65,6 +65,7 @@
                     { text: "deviceType", value: "deviceType" },
                     { text: "deviceModel", value: "deviceModel" },
                     { text: "deviceStatus", value: "deviceStatus" },
+                    { text: "usimId", value: "usimId" },
                 ],
             device : [],
             newValue: {},
@@ -86,6 +87,7 @@
                 'deviceType': '',
                 'deviceModel': '',
                 'deviceStatus': '',
+                'usimId': 0,
             }
         },
         methods: {

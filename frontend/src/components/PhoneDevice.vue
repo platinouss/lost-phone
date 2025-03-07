@@ -20,6 +20,7 @@
             <String label="DeviceType" v-model="value.deviceType" :editMode="editMode" :inputUI="''"/>
             <String label="DeviceModel" v-model="value.deviceModel" :editMode="editMode" :inputUI="''"/>
             <String label="DeviceStatus" v-model="value.deviceStatus" :editMode="editMode" :inputUI="''"/>
+            <Number label="UsimId" v-model="value.usimId" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions style="background-color: white;">

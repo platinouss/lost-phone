@@ -14,6 +14,8 @@ public class UsimUnblocked extends AbstractEvent {
     private Long id;
     private Long userId;
     private Long deviceId;
+    private String phoneNumber;
+    private String status;
 
     public UsimUnblocked(Usim aggregate) {
         super(aggregate);

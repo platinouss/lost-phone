@@ -105,6 +105,7 @@
                 'deviceType': '',
                 'deviceModel': '',
                 'deviceStatus': '',
+                'usimId': 0,
             }
         },
         methods:{

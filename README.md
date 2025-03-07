@@ -36,7 +36,7 @@ mvn spring-boot:run
 ## Test by API
 - phone
 ```
- http :8088/devices id="id"userId="userId"deviceType="deviceType"deviceModel="deviceModel"deviceStatus="deviceStatus"
+ http :8088/devices id="id"userId="userId"deviceType="deviceType"deviceModel="deviceModel"deviceStatus="deviceStatus"usimId="usimId"
 ```
 - customer
 ```
