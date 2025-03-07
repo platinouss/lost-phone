@@ -104,6 +104,7 @@
                 'userId': 0,
                 'phoneNumber': '',
                 'status': '',
+                'deviceId': 0,
             }
         },
         methods:{

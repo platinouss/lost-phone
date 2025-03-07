@@ -44,13 +44,13 @@
                     </v-list-item>
                     <v-list-item
                         class="px-2"
-                        key="searchPhoneInfos"
-                        to="/phones/searchPhoneInfos"
+                        key="searchDeviceInfos"
+                        to="/phones/searchDeviceInfos"
                         @click="changeUrl()"
                         color="primary"
                         style="font-weight:700;"
                     >
-                        SearchPhoneInfo
+                        SearchDeviceInfo
                     </v-list-item>
                     <v-list-item
                         class="px-2"
@@ -84,16 +84,6 @@
                     </v-list-item>
                     <v-list-item
                         class="px-2"
-                        key="searchUsimStatuses"
-                        to="/usims/searchUsimStatuses"
-                        @click="changeUrl()"
-                        color="primary"
-                        style="font-weight:700;"
-                    >
-                        SearchUsimStatus
-                    </v-list-item>
-                    <v-list-item
-                        class="px-2"
                         key="usimBlockHistories"
                         to="/messages/usimBlockHistories"
                         @click="changeUrl()"
@@ -114,13 +104,13 @@
                     </v-list-item>
                     <v-list-item
                         class="px-2"
-                        key="lostReportStatusQueries"
-                        to="/reports/lostReportStatusQueries"
+                        key="searchReports"
+                        to="/reports/searchReports"
                         @click="changeUrl()"
                         color="primary"
                         style="font-weight:700;"
                     >
-                        LostReportStatusQuery
+                        SearchReport
                     </v-list-item>
                 </v-list>
             </v-navigation-drawer>
@@ -200,7 +190,7 @@ export default {
             },
             { 
                 title: 'UsimBlockHistory', 
-                description: 'UsimBlockHistory을 관리하는 화면입니다.', 
+                description: 'USIMBlockHistory을 관리하는 화면입니다.', 
                 key: 'usimBlockHistories', 
                 route: '/messages/usimBlockHistories',
                 ImageUrl: '',
@@ -213,31 +203,24 @@ export default {
                 ImageUrl: '',
             },
             { 
-                title: 'SearchPhoneInfo', 
-                description: 'search PhoneInfo을 관리하는 화면입니다.', 
-                key: 'searchPhoneInfos', 
-                route: '/phones/searchPhoneInfos',
+                title: 'SearchDeviceInfo', 
+                description: 'SearchDeviceInfo을 관리하는 화면입니다.', 
+                key: 'searchDeviceInfos', 
+                route: '/phones/searchDeviceInfos',
                 ImageUrl: '',
             },
             { 
                 title: 'SearchCustomer', 
-                description: 'search Customer을 관리하는 화면입니다.', 
+                description: 'SearchCustomer을 관리하는 화면입니다.', 
                 key: 'searchCustomers', 
                 route: '/customers/searchCustomers',
                 ImageUrl: '',
             },
             { 
-                title: 'SearchUsimStatus', 
-                description: 'search Usim status을 관리하는 화면입니다.', 
-                key: 'searchUsimStatuses', 
-                route: '/usims/searchUsimStatuses',
-                ImageUrl: '',
-            },
-            { 
-                title: 'LostReportStatusQuery', 
-                description: 'LostReportStatusQuery을 관리하는 화면입니다.', 
-                key: 'lostReportStatusQueries', 
-                route: '/reports/lostReportStatusQueries',
+                title: 'SearchReport', 
+                description: 'SearchReport을 관리하는 화면입니다.', 
+                key: 'searchReports', 
+                route: '/reports/searchReports',
                 ImageUrl: '',
             },
             

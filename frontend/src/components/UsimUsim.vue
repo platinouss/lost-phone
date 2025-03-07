@@ -19,6 +19,7 @@
             <Number label="UserId" v-model="value.userId" :editMode="editMode" :inputUI="''"/>
             <String label="PhoneNumber" v-model="value.phoneNumber" :editMode="editMode" :inputUI="''"/>
             <String label="Status" v-model="value.status" :editMode="editMode" :inputUI="''"/>
+            <Number label="DeviceId" v-model="value.deviceId" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions style="background-color: white;">

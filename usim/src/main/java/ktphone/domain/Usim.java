@@ -27,6 +27,8 @@ public class Usim {
 
     private String status;
 
+    private Long deviceId;
+
     public static UsimRepository repository() {
         UsimRepository usimRepository = UsimApplication.applicationContext.getBean(
             UsimRepository.class

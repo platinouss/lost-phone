@@ -22,6 +22,9 @@
         data: () => ({
             headers: [
                 { text: "id", value: "id" },
+                { text: "name", value: "name" },
+                { text: "phoneNumber", value: "phoneNumber" },
+                { text: "email", value: "email" },
             ],
             searchCustomer : [],
         }),

@@ -11,25 +11,28 @@ import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Service;
 
 @Service
-public class SearchCustomerViewHandler {
+public class SearchDeviceInfoViewHandler {
 
     //<<< DDD / CQRS
     @Autowired
-    private SearchCustomerRepository searchCustomerRepository;
+    private SearchDeviceInfoRepository searchDeviceInfoRepository;
 
     @StreamListener(KafkaProcessor.INPUT)
-    public void whenRegistered_then_CREATE_1(@Payload Registered registered) {
+    public void whenPhoneRegistered_then_CREATE_1(
+        @Payload PhoneRegistered phoneRegistered
+    ) {
         try {
-            if (!registered.validate()) return;
+            if (!phoneRegistered.validate()) return;
 
             // view 객체 생성
-            SearchCustomer searchCustomer = new SearchCustomer();
+            SearchDeviceInfo searchDeviceInfo = new SearchDeviceInfo();
             // view 객체에 이벤트의 Value 를 set 함
-            searchCustomer.setName(registered.getName());
-            searchCustomer.setPhoneNumber(registered.getPhoneNumber());
-            searchCustomer.setEmail(registered.getEmail());
+            searchDeviceInfo.setUserId(phoneRegistered.getUserId());
+            searchDeviceInfo.setDeviceType(phoneRegistered.getDeviceType());
+            searchDeviceInfo.setDeviceModel(phoneRegistered.getDeviceModel());
+            searchDeviceInfo.setDeviceStatus(phoneRegistered.getDeviceStatus());
             // view 레파지 토리에 save
-            searchCustomerRepository.save(searchCustomer);
+            searchDeviceInfoRepository.save(searchDeviceInfo);
         } catch (Exception e) {
             e.printStackTrace();
         }

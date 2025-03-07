@@ -8,8 +8,8 @@ Vue.use(Router);
 import PhoneDeviceManager from "./components/listers/PhoneDeviceCards"
 import PhoneDeviceDetail from "./components/listers/PhoneDeviceDetail"
 
-import SearchPhoneInfoView from "./components/SearchPhoneInfoView"
-import SearchPhoneInfoViewDetail from "./components/SearchPhoneInfoViewDetail"
+import SearchDeviceInfoView from "./components/SearchDeviceInfoView"
+import SearchDeviceInfoViewDetail from "./components/SearchDeviceInfoViewDetail"
 import CustomerCustomerManager from "./components/listers/CustomerCustomerCards"
 import CustomerCustomerDetail from "./components/listers/CustomerCustomerDetail"
 
@@ -18,16 +18,14 @@ import SearchCustomerViewDetail from "./components/SearchCustomerViewDetail"
 import UsimUsimManager from "./components/listers/UsimUsimCards"
 import UsimUsimDetail from "./components/listers/UsimUsimDetail"
 
-import SearchUsimStatusView from "./components/SearchUsimStatusView"
-import SearchUsimStatusViewDetail from "./components/SearchUsimStatusViewDetail"
 import MessageUsimBlockHistoryManager from "./components/listers/MessageUsimBlockHistoryCards"
 import MessageUsimBlockHistoryDetail from "./components/listers/MessageUsimBlockHistoryDetail"
 
 import ReportReportHistoryManager from "./components/listers/ReportReportHistoryCards"
 import ReportReportHistoryDetail from "./components/listers/ReportReportHistoryDetail"
 
-import LostReportStatusQueryView from "./components/LostReportStatusQueryView"
-import LostReportStatusQueryViewDetail from "./components/LostReportStatusQueryViewDetail"
+import SearchReportView from "./components/SearchReportView"
+import SearchReportViewDetail from "./components/SearchReportViewDetail"
 
 export default new Router({
     // mode: 'history',
@@ -45,14 +43,14 @@ export default new Router({
             },
 
             {
-                path: '/phones/searchPhoneInfos',
-                name: 'SearchPhoneInfoView',
-                component: SearchPhoneInfoView
+                path: '/phones/searchDeviceInfos',
+                name: 'SearchDeviceInfoView',
+                component: SearchDeviceInfoView
             },
             {
-                path: '/phones/searchPhoneInfos/:id',
-                name: 'SearchPhoneInfoViewDetail',
-                component: SearchPhoneInfoViewDetail
+                path: '/phones/searchDeviceInfos/:id',
+                name: 'SearchDeviceInfoViewDetail',
+                component: SearchDeviceInfoViewDetail
             },
             {
                 path: '/customers/customers',
@@ -87,16 +85,6 @@ export default new Router({
             },
 
             {
-                path: '/usims/searchUsimStatuses',
-                name: 'SearchUsimStatusView',
-                component: SearchUsimStatusView
-            },
-            {
-                path: '/usims/searchUsimStatuses/:id',
-                name: 'SearchUsimStatusViewDetail',
-                component: SearchUsimStatusViewDetail
-            },
-            {
                 path: '/messages/usimBlockHistories',
                 name: 'MessageUsimBlockHistoryManager',
                 component: MessageUsimBlockHistoryManager
@@ -119,14 +107,14 @@ export default new Router({
             },
 
             {
-                path: '/reports/lostReportStatusQueries',
-                name: 'LostReportStatusQueryView',
-                component: LostReportStatusQueryView
+                path: '/reports/searchReports',
+                name: 'SearchReportView',
+                component: SearchReportView
             },
             {
-                path: '/reports/lostReportStatusQueries/:id',
-                name: 'LostReportStatusQueryViewDetail',
-                component: LostReportStatusQueryViewDetail
+                path: '/reports/searchReports/:id',
+                name: 'SearchReportViewDetail',
+                component: SearchReportViewDetail
             },
 
 

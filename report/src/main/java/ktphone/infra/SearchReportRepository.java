@@ -6,8 +6,10 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource(
-    collectionResourceRel = "lostReportStatusQueries",
-    path = "lostReportStatusQueries"
+    collectionResourceRel = "searchReports",
+    path = "searchReports"
 )
-public interface LostReportStatusQueryRepository
-    extends PagingAndSortingRepository<LostReportStatusQuery, Long> {}
+public interface SearchReportRepository
+    extends PagingAndSortingRepository<SearchReport, Long> {
+    List<SearchReport> findByStatus(String status);
+}

@@ -12,7 +12,7 @@ spring:
         - id: phone
           uri: http://localhost:8082
           predicates:
-            - Path=/devices/**, /searchPhoneInfos/**
+            - Path=/devices/**, /searchDeviceInfos/**
         - id: customer
           uri: http://localhost:8083
           predicates:
@@ -20,7 +20,7 @@ spring:
         - id: usim
           uri: http://localhost:8084
           predicates:
-            - Path=/usims/**, /searchUsimStatuses/**
+            - Path=/usims/**, 
         - id: message
           uri: http://localhost:8085
           predicates:
@@ -28,7 +28,7 @@ spring:
         - id: report
           uri: http://localhost:8086
           predicates:
-            - Path=/reportHistories/**, /lostReportStatusQueries/**
+            - Path=/reportHistories/**, /searchReports/**
         - id: frontend
           uri: http://localhost:8080
           predicates:

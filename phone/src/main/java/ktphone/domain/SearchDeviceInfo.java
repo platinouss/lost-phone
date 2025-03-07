@@ -8,11 +8,16 @@ import lombok.Data;
 
 //<<< EDA / CQRS
 @Entity
-@Table(name = "LostReportStatusQuery_table")
+@Table(name = "SearchDeviceInfo_table")
 @Data
-public class LostReportStatusQuery {
+public class SearchDeviceInfo {
 
     @Id
     //@GeneratedValue(strategy=GenerationType.AUTO)
     private Long id;
+
+    private Long userId;
+    private String deviceType;
+    private String deviceModel;
+    private String deviceStatus;
 }

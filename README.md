@@ -44,7 +44,7 @@ mvn spring-boot:run
 ```
 - usim
 ```
- http :8088/usims id="id"userId="userId"phoneNumber="phoneNumber"status="status"
+ http :8088/usims id="id"userId="userId"phoneNumber="phoneNumber"status="status"deviceId="deviceId"
 ```
 - message
 ```

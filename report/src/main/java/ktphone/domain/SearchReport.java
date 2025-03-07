@@ -8,15 +8,18 @@ import lombok.Data;
 
 //<<< EDA / CQRS
 @Entity
-@Table(name = "SearchCustomer_table")
+@Table(name = "SearchReport_table")
 @Data
-public class SearchCustomer {
+public class SearchReport {
 
     @Id
     //@GeneratedValue(strategy=GenerationType.AUTO)
     private Long id;
 
-    private String name;
-    private String phoneNumber;
-    private String email;
+    private Long userId;
+    private Long deviceId;
+    private String status;
+    private Date reportedAt;
+    private Date clearedAt;
+    private String contents;
 }

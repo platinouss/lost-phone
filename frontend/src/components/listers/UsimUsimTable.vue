@@ -64,6 +64,7 @@
                     { text: "userId", value: "userId" },
                     { text: "phoneNumber", value: "phoneNumber" },
                     { text: "status", value: "status" },
+                    { text: "deviceId", value: "deviceId" },
                 ],
             usim : [],
             newValue: {},
@@ -84,6 +85,7 @@
                 'userId': 0,
                 'phoneNumber': '',
                 'status': '',
+                'deviceId': 0,
             }
         },
         methods: {

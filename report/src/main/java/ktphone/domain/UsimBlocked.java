@@ -1,13 +1,12 @@
 package ktphone.domain;
 
+import java.time.LocalDate;
 import java.util.*;
-import ktphone.domain.*;
 import ktphone.infra.AbstractEvent;
-import lombok.*;
+import lombok.Data;
 
 @Data
-@ToString
-public class UsimUnblocked extends AbstractEvent {
+public class UsimBlocked extends AbstractEvent {
 
     private Long id;
     private Long userId;
