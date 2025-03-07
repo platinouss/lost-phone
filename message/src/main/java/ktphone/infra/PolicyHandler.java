@@ -20,9 +20,6 @@ public class PolicyHandler {
     @Autowired
     UsimBlockHistoryRepository usimBlockHistoryRepository;
 
-    @Autowired
-    VerificationInfoRepository verificationInfoRepository;
-
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString) {}
 

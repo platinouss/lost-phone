@@ -12,7 +12,7 @@ spring:
         - id: phone
           uri: http://localhost:8082
           predicates:
-            - Path=/lostReportHistories/**, /devices/**, /lostReportStatusQueries/**, /searchPhoneInfos/**
+            - Path=/devices/**, /searchPhoneInfos/**
         - id: customer
           uri: http://localhost:8083
           predicates:
@@ -24,7 +24,11 @@ spring:
         - id: message
           uri: http://localhost:8085
           predicates:
-            - Path=/usimBlockHistories/**, /verificationInfos/**, 
+            - Path=/usimBlockHistories/**, 
+        - id: report
+          uri: http://localhost:8086
+          predicates:
+            - Path=/reportHistories/**, /lostReportStatusQueries/**
         - id: frontend
           uri: http://localhost:8080
           predicates:
@@ -52,7 +56,7 @@ spring:
         - id: phone
           uri: http://phone:8080
           predicates:
-            - Path=/lostReportHistories/**, /devices/**, 
+            - Path=/devices/**, 
         - id: customer
           uri: http://customer:8080
           predicates:
@@ -64,7 +68,11 @@ spring:
         - id: message
           uri: http://message:8080
           predicates:
-            - Path=/usimBlockHistories/**, /verificationInfos/**, 
+            - Path=/usimBlockHistories/**, 
+        - id: report
+          uri: http://report:8080
+          predicates:
+            - Path=/reportHistories/**, 
         - id: frontend
           uri: http://frontend:8080
           predicates:

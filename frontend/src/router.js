@@ -5,13 +5,9 @@ import Router from 'vue-router'
 Vue.use(Router);
 
 
-import PhoneLostReportHistoryManager from "./components/listers/PhoneLostReportHistoryCards"
-import PhoneLostReportHistoryDetail from "./components/listers/PhoneLostReportHistoryDetail"
 import PhoneDeviceManager from "./components/listers/PhoneDeviceCards"
 import PhoneDeviceDetail from "./components/listers/PhoneDeviceDetail"
 
-import LostReportStatusQueryView from "./components/LostReportStatusQueryView"
-import LostReportStatusQueryViewDetail from "./components/LostReportStatusQueryViewDetail"
 import SearchPhoneInfoView from "./components/SearchPhoneInfoView"
 import SearchPhoneInfoViewDetail from "./components/SearchPhoneInfoViewDetail"
 import CustomerCustomerManager from "./components/listers/CustomerCustomerCards"
@@ -26,24 +22,17 @@ import SearchUsimStatusView from "./components/SearchUsimStatusView"
 import SearchUsimStatusViewDetail from "./components/SearchUsimStatusViewDetail"
 import MessageUsimBlockHistoryManager from "./components/listers/MessageUsimBlockHistoryCards"
 import MessageUsimBlockHistoryDetail from "./components/listers/MessageUsimBlockHistoryDetail"
-import MessageVerificationInfoManager from "./components/listers/MessageVerificationInfoCards"
-import MessageVerificationInfoDetail from "./components/listers/MessageVerificationInfoDetail"
 
+import ReportReportHistoryManager from "./components/listers/ReportReportHistoryCards"
+import ReportReportHistoryDetail from "./components/listers/ReportReportHistoryDetail"
+
+import LostReportStatusQueryView from "./components/LostReportStatusQueryView"
+import LostReportStatusQueryViewDetail from "./components/LostReportStatusQueryViewDetail"
 
 export default new Router({
     // mode: 'history',
     base: process.env.BASE_URL,
     routes: [
-            {
-                path: '/phones/lostReportHistories',
-                name: 'PhoneLostReportHistoryManager',
-                component: PhoneLostReportHistoryManager
-            },
-            {
-                path: '/phones/lostReportHistories/:id',
-                name: 'PhoneLostReportHistoryDetail',
-                component: PhoneLostReportHistoryDetail
-            },
             {
                 path: '/phones/devices',
                 name: 'PhoneDeviceManager',
@@ -55,16 +44,6 @@ export default new Router({
                 component: PhoneDeviceDetail
             },
 
-            {
-                path: '/phones/lostReportStatusQueries',
-                name: 'LostReportStatusQueryView',
-                component: LostReportStatusQueryView
-            },
-            {
-                path: '/phones/lostReportStatusQueries/:id',
-                name: 'LostReportStatusQueryViewDetail',
-                component: LostReportStatusQueryViewDetail
-            },
             {
                 path: '/phones/searchPhoneInfos',
                 name: 'SearchPhoneInfoView',
@@ -127,17 +106,28 @@ export default new Router({
                 name: 'MessageUsimBlockHistoryDetail',
                 component: MessageUsimBlockHistoryDetail
             },
+
             {
-                path: '/messages/verificationInfos',
-                name: 'MessageVerificationInfoManager',
-                component: MessageVerificationInfoManager
+                path: '/reports/reportHistories',
+                name: 'ReportReportHistoryManager',
+                component: ReportReportHistoryManager
             },
             {
-                path: '/messages/verificationInfos/:id',
-                name: 'MessageVerificationInfoDetail',
-                component: MessageVerificationInfoDetail
+                path: '/reports/reportHistories/:id',
+                name: 'ReportReportHistoryDetail',
+                component: ReportReportHistoryDetail
             },
 
+            {
+                path: '/reports/lostReportStatusQueries',
+                name: 'LostReportStatusQueryView',
+                component: LostReportStatusQueryView
+            },
+            {
+                path: '/reports/lostReportStatusQueries/:id',
+                name: 'LostReportStatusQueryViewDetail',
+                component: LostReportStatusQueryViewDetail
+            },
 
 
     ]

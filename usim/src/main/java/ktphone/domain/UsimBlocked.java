@@ -13,6 +13,10 @@ public class UsimBlocked extends AbstractEvent {
 
     private Long id;
 
+    public UsimBlocked(Usim aggregate) {
+        super(aggregate);
+    }
+
     public UsimBlocked() {
         super();
     }

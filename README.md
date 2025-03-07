@@ -24,6 +24,7 @@ See the README.md files inside the each microservices directory:
 - customer
 - usim
 - message
+- report
 
 
 ## Run API Gateway (Spring Gateway)
@@ -35,7 +36,6 @@ mvn spring-boot:run
 ## Test by API
 - phone
 ```
- http :8088/lostReportHistories id="id"deviceId="deviceId"userId="userId"status="status"reportedAt="reportedAt"clearedAt="clearedAt"contents="contents"
  http :8088/devices id="id"userId="userId"deviceType="deviceType"deviceModel="deviceModel"deviceStatus="deviceStatus"
 ```
 - customer
@@ -49,7 +49,10 @@ mvn spring-boot:run
 - message
 ```
  http :8088/usimBlockHistories id="id"
- http :8088/verificationInfos id="id"
+```
+- report
+```
+ http :8088/reportHistories id="id"deviceId="deviceId"userId="userId"status="status"reportedAt="reportedAt"clearedAt="clearedAt"contents="contents"
 ```
 
 

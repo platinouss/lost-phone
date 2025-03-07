@@ -9,16 +9,19 @@
         </template>
 
         <v-card-title v-if="value._links">
-            Customer # {{decode(value._links.self.href.split("/")[value._links.self.href.split("/").length - 1])}}
+            ReportHistory # {{decode(value._links.self.href.split("/")[value._links.self.href.split("/").length - 1])}}
         </v-card-title >
         <v-card-title v-else>
-            Customer
+            ReportHistory
         </v-card-title >        
 
         <v-card-text style="background-color: white;">
-            <String label="Name" v-model="value.name" :editMode="editMode" :inputUI="''"/>
-            <String label="PhoneNumber" v-model="value.phoneNumber" :editMode="editMode" :inputUI="''"/>
-            <String label="Email" v-model="value.email" :editMode="editMode" :inputUI="''"/>
+            <Number label="DeviceId" v-model="value.deviceId" :editMode="editMode" :inputUI="''"/>
+            <Number label="UserId" v-model="value.userId" :editMode="editMode" :inputUI="''"/>
+            <String label="Status" v-model="value.status" :editMode="editMode" :inputUI="''"/>
+            <Date label="ReportedAt" v-model="value.reportedAt" :editMode="editMode" :inputUI="''"/>
+            <Date label="ClearedAt" v-model="value.clearedAt" :editMode="editMode" :inputUI="''"/>
+            <String label="Contents" v-model="value.contents" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions style="background-color: white;">
@@ -45,7 +48,14 @@
                     text
                     @click="save"
                 >
-                    Signup
+                    LostReport
+                </v-btn>
+                <v-btn
+                    color="primary"
+                    text
+                    @click="save"
+                >
+                    LostClearance
                 </v-btn>
                 <v-btn
                     color="primary"
@@ -81,7 +91,7 @@
 
 
     export default {
-        name: 'CustomerCustomer',
+        name: 'ReportReportHistory',
         components:{
         },
         props: {
@@ -136,7 +146,7 @@
 
                     if(!this.offline) {
                         if(this.isNew) {
-                            temp = await axios.post(axios.fixUrl('/customers'), this.value)
+                            temp = await axios.post(axios.fixUrl('/reportHistories'), this.value)
                         } else {
                             temp = await axios.put(axios.fixUrl(this.value._links.self.href), this.value)
                         }

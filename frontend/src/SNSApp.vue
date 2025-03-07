@@ -34,16 +34,6 @@
                 <v-list>
                     <v-list-item
                         class="px-2"
-                        key="lostReportHistories"
-                        to="/phones/lostReportHistories"
-                        @click="changeUrl()"
-                        color="primary"
-                        style="font-weight:700;"
-                    >
-                        LostReportHistory
-                    </v-list-item>
-                    <v-list-item
-                        class="px-2"
                         key="devices"
                         to="/phones/devices"
                         @click="changeUrl()"
@@ -51,16 +41,6 @@
                         style="font-weight:700;"
                     >
                         Device
-                    </v-list-item>
-                    <v-list-item
-                        class="px-2"
-                        key="lostReportStatusQueries"
-                        to="/phones/lostReportStatusQueries"
-                        @click="changeUrl()"
-                        color="primary"
-                        style="font-weight:700;"
-                    >
-                        LostReportStatusQuery
                     </v-list-item>
                     <v-list-item
                         class="px-2"
@@ -124,13 +104,23 @@
                     </v-list-item>
                     <v-list-item
                         class="px-2"
-                        key="verificationInfos"
-                        to="/messages/verificationInfos"
+                        key="reportHistories"
+                        to="/reports/reportHistories"
                         @click="changeUrl()"
                         color="primary"
                         style="font-weight:700;"
                     >
-                        VerificationInfo
+                        ReportHistory
+                    </v-list-item>
+                    <v-list-item
+                        class="px-2"
+                        key="lostReportStatusQueries"
+                        to="/reports/lostReportStatusQueries"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        LostReportStatusQuery
                     </v-list-item>
                 </v-list>
             </v-navigation-drawer>
@@ -188,13 +178,6 @@ export default {
         ImageUrl: '',
         aggregate: [
             { 
-                title: 'LostReportHistory', 
-                description: 'LostReportHistory을 관리하는 화면입니다.', 
-                key: 'lostReportHistories', 
-                route: '/phones/lostReportHistories',
-                ImageUrl: '',
-            },
-            { 
                 title: 'Device', 
                 description: 'Device을 관리하는 화면입니다.', 
                 key: 'devices', 
@@ -223,17 +206,10 @@ export default {
                 ImageUrl: '',
             },
             { 
-                title: 'VerificationInfo', 
-                description: 'VerificationInfo을 관리하는 화면입니다.', 
-                key: 'verificationInfos', 
-                route: '/messages/verificationInfos',
-                ImageUrl: '',
-            },
-            { 
-                title: 'LostReportStatusQuery', 
-                description: 'LostReportStatusQuery을 관리하는 화면입니다.', 
-                key: 'lostReportStatusQueries', 
-                route: '/phones/lostReportStatusQueries',
+                title: 'ReportHistory', 
+                description: 'ReportHistory을 관리하는 화면입니다.', 
+                key: 'reportHistories', 
+                route: '/reports/reportHistories',
                 ImageUrl: '',
             },
             { 
@@ -255,6 +231,13 @@ export default {
                 description: 'search Usim status을 관리하는 화면입니다.', 
                 key: 'searchUsimStatuses', 
                 route: '/usims/searchUsimStatuses',
+                ImageUrl: '',
+            },
+            { 
+                title: 'LostReportStatusQuery', 
+                description: 'LostReportStatusQuery을 관리하는 화면입니다.', 
+                key: 'lostReportStatusQueries', 
+                route: '/reports/lostReportStatusQueries',
                 ImageUrl: '',
             },
             

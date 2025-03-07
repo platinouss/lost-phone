@@ -1,7 +1,7 @@
 <template>
     <v-card outlined>
         <v-card-title>
-            LostClearance
+            Signup
         </v-card-title>
 
         <v-card-text>
@@ -12,9 +12,9 @@
             <v-btn
                     color="primary"
                     text
-                    @click="lostClearance"
+                    @click="signup"
             >
-                LostClearance
+                Signup
             </v-btn>
             
             <v-btn
@@ -32,7 +32,7 @@
 <script>
    
     export default {
-        name: 'LostClearanceCommand',
+        name: 'SignupCommand',
         components:{},
         props: {},
         data: () => ({
@@ -44,8 +44,8 @@
         watch: {
         },
         methods: {
-            lostClearance() {
-                this.$emit('lostClearance', this.value);
+            signup() {
+                this.$emit('signup', this.value);
             },
             close() {
                 this.$emit('closeDialog');

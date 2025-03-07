@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import javax.persistence.*;
 import ktphone.UsimApplication;
+import ktphone.domain.UsimBlocked;
 import ktphone.domain.UsimUnblocked;
 import lombok.Data;
 
