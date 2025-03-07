@@ -67,6 +67,7 @@
                     { text: "reportedAt", value: "reportedAt" },
                     { text: "clearedAt", value: "clearedAt" },
                     { text: "contents", value: "contents" },
+                    { text: "usimId", value: "usimId" },
                 ],
             reportHistory : [],
             newValue: {},
@@ -90,6 +91,7 @@
                 'reportedAt': '2025-03-07',
                 'clearedAt': '2025-03-07',
                 'contents': '',
+                'usimId': 0,
             }
         },
         methods: {

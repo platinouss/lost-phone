@@ -107,6 +107,7 @@
                 'reportedAt': '2025-03-07',
                 'clearedAt': '2025-03-07',
                 'contents': '',
+                'usimId': 0,
             }
         },
         methods:{

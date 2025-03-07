@@ -22,6 +22,7 @@
             <Date label="ReportedAt" v-model="value.reportedAt" :editMode="editMode" :inputUI="''"/>
             <Date label="ClearedAt" v-model="value.clearedAt" :editMode="editMode" :inputUI="''"/>
             <String label="Contents" v-model="value.contents" :editMode="editMode" :inputUI="''"/>
+            <Number label="UsimId" v-model="value.usimId" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions style="background-color: white;">

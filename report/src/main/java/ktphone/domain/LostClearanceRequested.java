@@ -18,6 +18,7 @@ public class LostClearanceRequested extends AbstractEvent {
     private Date reportedAt;
     private Date clearedAt;
     private String contents;
+    private Long usimId;
 
     public LostClearanceRequested(ReportHistory aggregate) {
         super(aggregate);

@@ -16,4 +16,5 @@ public class LostReportRequested extends AbstractEvent {
     private Date reportedAt;
     private Date clearedAt;
     private String contents;
+    private Long usimId;
 }

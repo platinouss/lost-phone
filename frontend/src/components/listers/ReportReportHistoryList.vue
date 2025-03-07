@@ -47,6 +47,7 @@
                             
                             
                             
+                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
@@ -57,6 +58,7 @@
                             [ ReportedAt :  {{data.reportedAt }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ ClearedAt :  {{data.clearedAt }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Contents :  {{data.contents }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ UsimId :  {{data.usimId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -122,6 +124,7 @@
                 'reportedAt': '2025-03-07',
                 'clearedAt': '2025-03-07',
                 'contents': '',
+                'usimId': 0,
             }
         },
         methods: {

@@ -52,7 +52,7 @@ mvn spring-boot:run
 ```
 - report
 ```
- http :8088/reportHistories id="id"deviceId="deviceId"userId="userId"status="status"reportedAt="reportedAt"clearedAt="clearedAt"contents="contents"
+ http :8088/reportHistories id="id"deviceId="deviceId"userId="userId"status="status"reportedAt="reportedAt"clearedAt="clearedAt"contents="contents"usimId="usimId"
 ```
 
 

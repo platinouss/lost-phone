@@ -33,6 +33,8 @@ public class ReportHistory {
 
     private String contents;
 
+    private Long usimId;
+
     @PostPersist
     public void onPostPersist() {
         LostReportRequested lostReportRequested = new LostReportRequested(this);
@@ -49,10 +51,6 @@ public class ReportHistory {
             ReportHistoryRepository.class
         );
         return reportHistoryRepository;
-    }
-
-    public void LostReport() {
-        //
     }
 }
 //>>> DDD / Aggregate Root
