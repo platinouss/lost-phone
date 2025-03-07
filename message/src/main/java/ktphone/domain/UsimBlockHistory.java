@@ -19,6 +19,12 @@ public class UsimBlockHistory {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    private Long userId;
+
+    private Long deviceId;
+
+    private String message;
+
     public static UsimBlockHistoryRepository repository() {
         UsimBlockHistoryRepository usimBlockHistoryRepository = MessageApplication.applicationContext.getBean(
             UsimBlockHistoryRepository.class

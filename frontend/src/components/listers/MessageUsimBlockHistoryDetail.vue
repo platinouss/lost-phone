@@ -5,6 +5,15 @@
         </v-card-title>
 
         <v-card-text>
+            <div>
+                <Number label="UserId" v-model="item.userId" :editMode="editMode" @change="change" />
+            </div>
+            <div>
+                <Number label="DeviceId" v-model="item.deviceId" :editMode="editMode" @change="change" />
+            </div>
+            <div>
+                <String label="Message" v-model="item.message" :editMode="editMode" @change="change" />
+            </div>
         </v-card-text>
 
         <v-card-actions>

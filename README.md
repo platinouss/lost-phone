@@ -48,7 +48,7 @@ mvn spring-boot:run
 ```
 - message
 ```
- http :8088/usimBlockHistories id="id"
+ http :8088/usimBlockHistories id="id"userId="userId"deviceId="deviceId"message="message"
 ```
 - report
 ```

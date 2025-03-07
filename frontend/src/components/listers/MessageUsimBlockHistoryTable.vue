@@ -61,6 +61,9 @@
             headers: 
                 [
                     { text: "id", value: "id" },
+                    { text: "userId", value: "userId" },
+                    { text: "deviceId", value: "deviceId" },
+                    { text: "message", value: "message" },
                 ],
             usimBlockHistory : [],
             newValue: {},
@@ -78,6 +81,9 @@
             this.values = temp.data._embedded.usimblockhistories;
 
             this.newValue = {
+                'userId': 0,
+                'deviceId': 0,
+                'message': '',
             }
         },
         methods: {

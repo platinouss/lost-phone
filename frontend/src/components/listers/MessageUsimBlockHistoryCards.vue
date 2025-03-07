@@ -101,6 +101,9 @@
             me.values = temp.data._embedded.usimBlockHistories;
             
             me.newValue = {
+                'userId': 0,
+                'deviceId': 0,
+                'message': '',
             }
         },
         methods:{

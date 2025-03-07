@@ -12,5 +12,4 @@ public class UsimUnblocked extends AbstractEvent {
     private Long id;
     private Long userId;
     private Long deviceId;
-    private String status;
 }

@@ -16,6 +16,9 @@
         </v-card-title >        
 
         <v-card-text style="background-color: white;">
+            <Number label="UserId" v-model="value.userId" :editMode="editMode" :inputUI="''"/>
+            <Number label="DeviceId" v-model="value.deviceId" :editMode="editMode" :inputUI="''"/>
+            <String label="Message" v-model="value.message" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions style="background-color: white;">
