@@ -38,30 +38,15 @@ public class Usim {
 
     //<<< Clean Arch / Port Method
     public static void blockUsim(LostReportRequested lostReportRequested) {
-        //implement business logic here:
-
-        /** Example 1:  new item 
-        Usim usim = new Usim();
-        repository().save(usim);
-
-        UsimBlocked usimBlocked = new UsimBlocked(usim);
-        usimBlocked.publishAfterCommit();
-        */
-
-        /** Example 2:  finding and process
-        
-
-        repository().findById(lostReportRequested.get???()).ifPresent(usim->{
+        repository().findById(lostReportRequested.getUsimId()).ifPresent(usim->{
             
-            usim // do something
+            usim.setStatus("DISABLED");
             repository().save(usim);
 
             UsimBlocked usimBlocked = new UsimBlocked(usim);
             usimBlocked.publishAfterCommit();
 
          });
-        */
-
     }
 
     //>>> Clean Arch / Port Method
@@ -69,30 +54,15 @@ public class Usim {
     public static void unblockUsim(
         LostClearanceRequested lostClearanceRequested
     ) {
-        //implement business logic here:
-
-        /** Example 1:  new item 
-        Usim usim = new Usim();
-        repository().save(usim);
-
-        UsimUnblocked usimUnblocked = new UsimUnblocked(usim);
-        usimUnblocked.publishAfterCommit();
-        */
-
-        /** Example 2:  finding and process
-        
-
-        repository().findById(lostClearanceRequested.get???()).ifPresent(usim->{
+        repository().findById(lostClearanceRequested.getUsimId()).ifPresent(usim->{
             
-            usim // do something
+            usim.setStatus("ENABLED");
             repository().save(usim);
 
             UsimUnblocked usimUnblocked = new UsimUnblocked(usim);
             usimUnblocked.publishAfterCommit();
 
          });
-        */
-
     }
     //>>> Clean Arch / Port Method
 
